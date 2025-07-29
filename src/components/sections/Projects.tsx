@@ -25,9 +25,54 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Personal Portfolio Website',
+      description: 'A modern, responsive portfolio website built with Next.js and TypeScript. Features dark/light mode, smooth animations, mobile optimization, and showcases my journey as a recent BCS graduate.',
+      image: '/images/projects/portfolio.jpg',
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'React'],
+      githubUrl: 'https://github.com/soham-satre/My-Portfolio',
+      liveUrl: 'https://sohampersonalportfolio.netlify.app/',
+      featured: true,
+      learnings: [
+        'Modern React development with Next.js',
+        'TypeScript for better code quality',
+        'Responsive design and mobile optimization',
+        'Animation libraries and user experience'
+      ]
+    },
+    {
+      title: 'Online Grocery Shop',
+      description: 'An ASP.NET web application for online grocery shopping with user authentication, product catalog, shopping cart, and order management. My first full-stack web application.',
+      image: '/images/projects/grocery-shop.jpg',
+      technologies: ['ASP.NET', 'C#', 'SQL Server', 'HTML/CSS', 'JavaScript'],
+      githubUrl: 'https://github.com/soham-satre/Online-Grocery-Shop',
+      liveUrl: null,
+      featured: true,
+      learnings: [
+        'Web development fundamentals',
+        'Database design and management',
+        'User authentication systems',
+        'Full-stack application architecture'
+      ]
+    },
+    {
+      title: 'Photography Portfolio',
+      description: 'A showcase of my photography work, built with Next.js and Tailwind CSS. Features a gallery layout, image lightbox, and smooth scrolling.',
+      image: '/images/projects/portfolio.jpg',
+      technologies: ['html','css','javascript'],
+      githubUrl: 'https://github.com/soham-satre/shubham-photography-portfolio',
+      liveUrl: 'https://shubhamsatreportfolio.netlify.app/',
+      featured: false,
+      learnings: [
+        'Programming fundamentals',
+        'Basic GUI development',
+        'Algorithm implementation',
+        'Code organization'
+      ]
+    },
+    {
       title: 'Password Generator & Encryption',
       description: 'A Java Swing desktop application that generates secure passwords and provides encryption/decryption functionality. This project helped me understand GUI development and security concepts.',
-      image: '/api/placeholder/600/400',
+      image: '/images/projects/password-generator.jpg',
       technologies: ['Java', 'Java Swing', 'AWT', 'Security Algorithms', 'OOP'],
       githubUrl: 'https://github.com/sohamsatre/password-generator',
       liveUrl: null,
@@ -40,26 +85,11 @@ const Projects = () => {
       ]
     },
     {
-      title: 'Online Grocery Shop',
-      description: 'An ASP.NET web application for online grocery shopping with user authentication, product catalog, shopping cart, and order management. My first full-stack web application.',
-      image: '/api/placeholder/600/400',
+      title: 'Grocery Management System',
+      description: 'A comprehensive system for managing grocery records, managing stocks, and handling customer orders, printing invoices.',
+      image: '/images/projects/grocery-shop.jpg',
       technologies: ['ASP.NET', 'C#', 'SQL Server', 'HTML/CSS', 'JavaScript'],
-      githubUrl: 'https://github.com/sohamsatre/grocery-shop',
-      liveUrl: null,
-      featured: true,
-      learnings: [
-        'Web development fundamentals',
-        'Database design and management',
-        'User authentication systems',
-        'Full-stack application architecture'
-      ]
-    },
-    {
-      title: 'College Management System',
-      description: 'A comprehensive system for managing student records, courses, and academic information. Built during my final year as a learning project.',
-      image: '/api/placeholder/600/400',
-      technologies: ['Java', 'MySQL', 'JDBC', 'Console Application'],
-      githubUrl: 'https://github.com/sohamsatre/college-management',
+      githubUrl: 'https://github.com/soham-satre/Grocery_Management',
       liveUrl: null,
       featured: false,
       learnings: [
@@ -67,36 +97,6 @@ const Projects = () => {
         'Complex data relationships',
         'System design principles',
         'Data validation and integrity'
-      ]
-    },
-    {
-      title: 'Simple Calculator App',
-      description: 'One of my first programming projects - a calculator application that performs basic arithmetic operations. Simple but meaningful as my starting point.',
-      image: '/api/placeholder/600/400',
-      technologies: ['Python', 'Tkinter', 'Basic Algorithms'],
-      githubUrl: 'https://github.com/sohamsatre/calculator-app',
-      liveUrl: null,
-      featured: false,
-      learnings: [
-        'Programming fundamentals',
-        'Basic GUI development',
-        'Algorithm implementation',
-        'Code organization'
-      ]
-    },
-    {
-      title: 'Data Analysis Project',
-      description: 'Statistical analysis of student performance data using R programming. Gained insights into data visualization and statistical computing.',
-      image: '/api/placeholder/600/400',
-      technologies: ['R', 'Data Analysis', 'Statistics', 'Data Visualization'],
-      githubUrl: 'https://github.com/sohamsatre/data-analysis-r',
-      liveUrl: null,
-      featured: false,
-      learnings: [
-        'Statistical programming with R',
-        'Data cleaning and preprocessing',
-        'Creating meaningful visualizations',
-        'Drawing insights from data'
       ]
     },
   ]
