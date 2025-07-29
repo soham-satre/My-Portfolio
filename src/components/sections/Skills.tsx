@@ -13,8 +13,9 @@ import {
 
 const Skills = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
+    rootMargin: '50px 0px',
   })
 
   const skillCategories = [
@@ -87,74 +88,74 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-dark-900">
-      <div className="container mx-auto px-6" ref={ref}>
+    <section id="skills" className="py-12 md:py-20 bg-white dark:bg-dark-900">
+      <div className="container mx-auto px-4 md:px-6" ref={ref}>
         <motion.div
           className="max-w-6xl mx-auto"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.4 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <motion.h2
-              className="text-4xl md:text-5xl font-bold font-display mb-6 text-gradient"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold font-display mb-4 md:mb-6 text-gradient"
+              initial={{ opacity: 0, y: 15 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
             >
               Skills & Technologies
             </motion.h2>
             <motion.p
-              className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4 md:px-0"
+              initial={{ opacity: 0, y: 15 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               Building a strong foundation in technology with enthusiasm to learn and grow
             </motion.p>
           </div>
 
           {/* Skills Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {skillCategories.map((category, index) => (
               <motion.div
                 key={category.title}
-                className="bg-gray-50 dark:bg-dark-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 card-hover"
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
+                className="bg-gray-50 dark:bg-dark-800 p-4 md:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 card-hover"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
               >
                 {/* Category Header */}
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mr-4">
-                    <category.icon className="w-6 h-6 text-primary-600 dark:text-primary-400" />
+                <div className="flex items-center mb-4 md:mb-6">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center mr-3 md:mr-4">
+                    <category.icon className="w-5 h-5 md:w-6 md:h-6 text-primary-600 dark:text-primary-400" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
                     {category.title}
                   </h3>
                 </div>
 
                 {/* Skills List */}
-                <div className="space-y-4">
+                <div className="space-y-3 md:space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skill.name}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      <div className="flex justify-between items-center mb-1 md:mb-2">
+                        <span className="text-xs md:text-sm font-medium text-gray-700 dark:text-gray-300">
                           {skill.name}
                         </span>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                        <span className="text-xs md:text-sm text-gray-500 dark:text-gray-400">
                           {skill.level}%
                         </span>
                       </div>
-                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 md:h-2">
                         <motion.div
-                          className="bg-gradient-to-r from-primary-500 to-purple-600 h-2 rounded-full"
+                          className="bg-gradient-to-r from-primary-500 to-purple-600 h-1.5 md:h-2 rounded-full"
                           initial={{ width: 0 }}
                           animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
                           transition={{ 
-                            duration: 1, 
-                            delay: 0.8 + index * 0.1 + skillIndex * 0.1,
+                            duration: 0.8, 
+                            delay: 0.3 + index * 0.05 + skillIndex * 0.05,
                             ease: "easeOut"
                           }}
                         />

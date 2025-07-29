@@ -6,8 +6,9 @@ import { FiAward, FiExternalLink, FiCalendar } from 'react-icons/fi'
 
 const Certifications = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
+    rootMargin: '50px 0px',
   })
 
   const certifications = [

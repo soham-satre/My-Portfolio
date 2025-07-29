@@ -6,8 +6,9 @@ import { FiCode, FiHeart, FiZap } from 'react-icons/fi'
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
+    rootMargin: '50px 0px',
   })
 
   const stats = [

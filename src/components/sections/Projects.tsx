@@ -18,8 +18,9 @@ interface Project {
 
 const Projects = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
+    rootMargin: '50px 0px',
   })
 
   const projects = [
@@ -104,29 +105,29 @@ const Projects = () => {
   const otherProjects = projects.filter(project => !project.featured)
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-dark-800">
-      <div className="container mx-auto px-6" ref={ref}>
+    <section id="projects" className="py-12 md:py-20 bg-gray-50 dark:bg-dark-800">
+      <div className="container mx-auto px-4 md:px-6" ref={ref}>
         <motion.div
           className="max-w-6xl mx-auto"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.6 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.4 }}
         >
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <motion.h2
-              className="text-4xl md:text-5xl font-bold font-display mb-6 text-gradient"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold font-display mb-4 md:mb-6 text-gradient"
+              initial={{ opacity: 0, y: 15 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
             >
               Featured Projects
             </motion.h2>
             <motion.p
-              className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4 md:px-0"
+              initial={{ opacity: 0, y: 15 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
             >
               My learning journey through projects - each one taught me something valuable
             </motion.p>
