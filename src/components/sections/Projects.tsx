@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi'
+import Image from 'next/image'
 
 interface Project {
   title: string;
@@ -146,9 +147,11 @@ const Projects = () => {
                 {/* Project Image */}
                 <div className={`relative ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   <div className="relative overflow-hidden rounded-xl shadow-xl group">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={600}
+                      height={400}
                       className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-primary-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -247,9 +250,11 @@ const Projects = () => {
                 >
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
+                      width={400}
+                      height={300}
                       className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
                     />
                   </div>

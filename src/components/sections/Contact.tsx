@@ -73,7 +73,7 @@ const Contact = () => {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              I'd love to connect! Whether you have an opportunity, want to collaborate, or just say hi.
+              I&apos;d love to connect! Whether you have an opportunity, want to collaborate, or just say hi.
             </motion.p>
           </div>
 
@@ -87,12 +87,12 @@ const Contact = () => {
             >
               <div>
                 <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
-                  Let's Connect & Grow Together
+                  Let&apos;s Connect & Grow Together
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                  I'm eager to connect with fellow developers, mentors, and professionals in the tech industry. 
+                  I&apos;m eager to connect with fellow developers, mentors, and professionals in the tech industry. 
                   Whether you have opportunities for a recent graduate, want to share advice, or just want to 
-                  network, I'd love to hear from you!
+                  network, I&apos;d love to hear from you!
                 </p>
               </div>
 

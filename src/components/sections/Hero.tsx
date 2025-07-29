@@ -69,7 +69,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 italic">
-              "Every expert was once a beginner. Every pro was once an amateur. Every icon was once an unknown." - Robin Sharma
+              &ldquo;Every expert was once a beginner. Every pro was once an amateur. Every icon was once an unknown.&rdquo; - Robin Sharma
             </p>
           </motion.div>
 
@@ -78,7 +78,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-4"
             variants={itemVariants}
           >
-            👋 Hi, I'm
+            👋 Hi, I&apos;m
           </motion.p>
 
           {/* Name */}

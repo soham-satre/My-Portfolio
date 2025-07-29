@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FiStar } from 'react-icons/fi'
+import Image from 'next/image'
 
 const Testimonials = () => {
   const [ref, inView] = useInView({
@@ -62,7 +63,7 @@ const Testimonials = () => {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Don't just take my word for it - here's what my clients have to say about working with me
+              Don&apos;t just take my word for it - here&apos;s what my clients have to say about working with me
             </motion.p>
           </div>
 
@@ -88,14 +89,16 @@ const Testimonials = () => {
 
                 {/* Testimonial Text */}
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                  "{testimonial.text}"
+                  &ldquo;{testimonial.text}&rdquo;
                 </p>
 
                 {/* Client Info */}
                 <div className="flex items-center space-x-4">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>

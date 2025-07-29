@@ -156,7 +156,7 @@ const Certifications = () => {
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
               These certifications represent my commitment to continuous learning and professional development. 
-              I'm always looking for new opportunities to expand my knowledge and stay current with industry trends.
+              I&apos;m always looking for new opportunities to expand my knowledge and stay current with industry trends.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mt-8">

@@ -57,14 +57,14 @@ const About = () => {
                 Starting My Tech Journey with Purpose
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                I'm a recent Bachelor of Computer Science graduate from SGM College, Karad, 
+                I&apos;m a recent Bachelor of Computer Science graduate from SGM College, Karad, 
                 excited to begin my career in the IT sector. While I may be new to the professional 
                 world, I bring fresh perspectives, genuine enthusiasm for learning, and a solid 
                 foundation in programming concepts.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                 My academic journey has equipped me with knowledge in multiple programming languages 
-                and frameworks. I believe that every expert was once a beginner, and I'm committed 
+                and frameworks. I believe that every expert was once a beginner, and I&apos;m committed 
                 to continuous learning, growth, and contributing meaningful solutions to real-world problems.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
@@ -75,7 +75,7 @@ const About = () => {
               
               {/* Technologies */}
               <div className="space-y-4">
-                <h4 className="text-lg font-semibold">Technologies I'm Learning & Working With:</h4>
+                <h4 className="text-lg font-semibold">Technologies I&apos;m Learning & Working With:</h4>
                 <div className="flex flex-wrap gap-3">
                   {[
                     'Java', 'Python', 'C/C++', 'JavaScript', 'HTML/CSS', 'MySQL', 
@@ -101,7 +101,7 @@ const About = () => {
                     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
                   }}
                 >
-                  Let's Connect & Grow Together
+                  Let&apos;s Connect & Grow Together
                 </a>
               </motion.div>
             </motion.div>
