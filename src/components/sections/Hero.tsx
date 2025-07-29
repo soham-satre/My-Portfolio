@@ -63,16 +63,6 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Inspirational Quote 
-          <motion.div
-            className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg border-l-4 border-primary-500"
-            variants={itemVariants}
-          >
-            <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 italic">
-              &ldquo;Every expert was once a beginner. Every pro was once an amateur. Every icon was once an unknown.&rdquo; - Robin Sharma
-            </p>
-          </motion.div>
-               */}
           {/* Greeting */}
           <motion.p
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-4"
