@@ -192,7 +192,7 @@ This portfolio is optimized for deployment on:
 ## 📞 **Contact**
 
 - **📧 Email:** [sohamsatre0304@gmail.com](mailto:sohamsatre0304@gmail.com)
-- **💼 LinkedIn:** [linkedin.com/in/soham-satre](https://www.linkedin.com/in/soham-satre)
+- **💼 LinkedIn:** [linkedin.com/in/soham-satre-06413a328](https://www.linkedin.com/in/soham-satre-06413a328/)
 - **🐙 GitHub:** [github.com/soham-satre](https://github.com/soham-satre)
 - **📍 Location:** Karad, Maharashtra, India
 

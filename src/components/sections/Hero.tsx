@@ -152,8 +152,8 @@ const Hero = () => {
             variants={itemVariants}
           >
             {[
-              { icon: FiGithub, href: 'https://github.com/sohamsatre', label: 'GitHub' },
-              { icon: FiLinkedin, href: 'https://www.linkedin.com/in/soham-satre', label: 'LinkedIn' },
+              { icon: FiGithub, href: 'https://github.com/soham-satre', label: 'GitHub' },
+              { icon: FiLinkedin, href: 'https://www.linkedin.com/in/soham-satre-06413a328/', label: 'LinkedIn' },
               { icon: FiMail, href: 'mailto:sohamsatre0304@gmail.com', label: 'Email' },
             ].map((social, index) => (
               <motion.a
