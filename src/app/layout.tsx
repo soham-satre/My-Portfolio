@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   keywords: ['portfolio', 'BCS graduate', 'developer', 'java', 'python', 'fresh graduate', 'IT professional'],
   authors: [{ name: 'Soham Sandip Satre' }],
   viewport: 'width=device-width, initial-scale=1',
+  other: {
+    'color-scheme': 'light dark',
+    'theme-color': '#3B82F6',
+  },
 }
 
 export default function RootLayout({
