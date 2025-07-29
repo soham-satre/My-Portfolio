@@ -5,7 +5,7 @@
 A modern, responsive portfolio website showcasing my journey as a fresh computer science graduate eager to start my career in the IT sector.
 
 ## 🚀 **Live Demo**
-🔗 [View Live Portfolio](https://my-portfolio-soham-satre.vercel.app) *(Deploy soon)*
+🔗 [View Live Portfolio](https://sohampersonalportfolio.netlify.app)
 
 ## 📋 **About Me**
 Hi! I'm Soham Sandip Satre, a recent Bachelor of Computer Science graduate from SGM College, Karad. I'm passionate about technology and eager to begin my career in the IT industry. This portfolio represents my learning journey, skills, and projects as I transition from student to professional developer.
